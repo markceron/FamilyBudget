@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="cta_add">#cdcdff</color>
+    <color name="colorCtaBar">#1E90FF</color>
+    <color name="colorFndBar">#476488</color>
+    <color name="colorInput">#191970</color>
+</resources>

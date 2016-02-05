@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Family Budget</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cuentas">Cuentas Disponibles</string>
+    <string name="title_activity_fondos">Fondos Disponibles</string>
+    <string name="title_activity_categorias">categorias</string>
+    <string name="title_activity_ctas_add">ctas_add</string>
+    <string name="title_activity_lstctas">Cuentas Disponibles</string>
+    <string name="title_activity_lst_fondos">Fondos Disponibles</string>
+    <string name="title_activity_frm_fondos_add">Agregar Fondos</string>
+</resources>
