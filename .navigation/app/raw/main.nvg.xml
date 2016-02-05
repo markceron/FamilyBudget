@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <navigationModel
-  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
-  <locations  
-    class = "java.util.ArrayList">
-    <statePointEntry>
-      <state      
-        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
-        className = "com.example.marcoceron.finanzasfamiliares.cuentas"/>
-      <point      
-        x = "2032"      
-        y = "92"/>
-    </statePointEntry>
-    <statePointEntry>
-      <state      
-        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
-        className = "com.example.marcoceron.finanzasfamiliares.MainActivity"/>
-      <point      
-        x = "328"      
-        y = "12"/>
-    </statePointEntry>
-  </locations>
+    ns="http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+    <locations class="java.util.ArrayList">
+        <statePointEntry>
+            <state class="com.android.tools.idea.editors.navigation.model.ActivityState"
+                className="com.example.marcoceron.finanzasfamiliares.cuentas" />
+            <point x="2032" y="92" />
+        </statePointEntry>
+        <statePointEntry>
+            <state class="com.android.tools.idea.editors.navigation.model.ActivityState"
+                className="com.example.marcoceron.finanzasfamiliares.MainActivity" />
+            <point x="328" y="12" />
+        </statePointEntry>
+    </locations>
 </navigationModel>
