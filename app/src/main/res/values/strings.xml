@@ -12,4 +12,5 @@
     <string name="title_activity_lstctas">Cuentas Disponibles</string>
     <string name="title_activity_lst_fondos">Fondos Disponibles</string>
     <string name="title_activity_frm_fondos_add">Agregar Fondos</string>
+    <string name="title_activity_frm_car_add">Agregar Categoria</string>
 </resources>

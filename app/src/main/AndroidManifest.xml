@@ -71,6 +71,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.marcoceron.finanzasfamiliares.MainActivity" />
         </activity>
+        <activity
+            android:name=".frm_cat_add"
+            android:label="@string/title_activity_frm_car_add"
+            android:parentActivityName=".categorias"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.marcoceron.finanzasfamiliares.categorias" />
+        </activity>
     </application>
 
 </manifest>
