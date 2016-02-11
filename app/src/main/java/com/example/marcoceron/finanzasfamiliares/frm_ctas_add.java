@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-public class ctas_add extends AppCompatActivity {
+public class frm_ctas_add extends AppCompatActivity {
     EditText mTxt;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -26,7 +26,7 @@ public class ctas_add extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ctas_add);
+        setContentView(R.layout.activity_frm_ctas_add);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mTxt = (EditText) findViewById(R.id.txtCta);

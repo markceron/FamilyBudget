@@ -13,22 +13,12 @@
     tools:showIn="@layout/activity_frm_fondos_add">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="Nombre del Fondo"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:id="@+id/lblFondo"
+        style="@style/TextViewStyle"
+        android:text="Nombre del Fondo" />
 
     <EditText
         android:id="@+id/txtTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="24dp"
-        android:capitalize="words"
-        android:contextClickable="false" />
+        style="@style/EditViewStyle"
+        android:layout_below="@+id/lblFondo" />
 </RelativeLayout>

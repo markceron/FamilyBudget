@@ -37,7 +37,7 @@ public class cuentas extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(cuentas.this, ctas_add.class);
+                Intent i = new Intent(cuentas.this, frm_ctas_add.class);
                 startActivity(i);
             }
         });

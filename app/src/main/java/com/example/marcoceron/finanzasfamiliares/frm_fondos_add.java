@@ -54,6 +54,9 @@ public class frm_fondos_add extends AppCompatActivity {
                     }
                 }
                 break;
+            case R.id.action_exit:
+                startActivity(c);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

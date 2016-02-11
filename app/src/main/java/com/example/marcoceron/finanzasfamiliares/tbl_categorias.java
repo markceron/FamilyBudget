@@ -6,17 +6,16 @@ package com.example.marcoceron.finanzasfamiliares;
 public class tbl_categorias {
     public static final String TABLE_NAME = "tbl_categorias";
 
-    public static final String CREATE_DB_TABLE = "CREATE TABLE " + TABLE_NAME + " (id INTEGER PRIMARY KEY AUTOINCREMENT, titulo STRING (25) UNIQUE ON CONFLICT ROLLBACK NOT NULL, tipo BOOLEAN);";
+    public static final String CREATE_DB_TABLE = "CREATE TABLE " + TABLE_NAME + " (id INTEGER PRIMARY KEY AUTOINCREMENT, titulo STRING (25) UNIQUE ON CONFLICT ROLLBACK NOT NULL);";
 
     public static final String SELECT_ALL = "Select * from " + TABLE_NAME;
 
     private int id;
     private String titulo;
-    private boolean tipo;
 
-    public tbl_categorias(String titulo, boolean tipo) {
+
+    public tbl_categorias(String titulo) {
         this.titulo = titulo;
-        this.tipo = tipo;
     }
 
     public int getId() {
@@ -35,20 +34,13 @@ public class tbl_categorias {
         this.titulo = titulo;
     }
 
-    public boolean isTipo() {
-        return tipo;
-    }
 
-    public void setTipo(boolean tipo) {
-        this.tipo = tipo;
-    }
 
     @Override
     public String toString() {
         return "tbl_categorias{" +
                 "id=" + id +
                 ", titulo='" + titulo + '\'' +
-                ", tipo=" + tipo +
                 '}';
     }
 }

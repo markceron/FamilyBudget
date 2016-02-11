@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ctas_add"
+            android:name=".frm_ctas_add"
             android:label="Agregar Cuenta"
             android:parentActivityName=".cuentas"
             android:theme="@style/AppTheme.NoActionBar">

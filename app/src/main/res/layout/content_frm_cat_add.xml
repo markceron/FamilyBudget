@@ -14,27 +14,13 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="Titulo de la Categoria"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        style="@style/TextViewStyle"
+        android:text="Categoria" />
 
     <EditText
         android:id="@+id/txtCat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView3" />
-
-    <Spinner
-        android:id="@+id/cmbTipo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/txtCat"
-        android:layout_marginTop="26dp" />
+        style="@style/EditViewStyle"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="8dp" />
 
 </RelativeLayout>

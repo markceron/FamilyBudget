@@ -1,24 +1,22 @@
 package com.example.marcoceron.finanzasfamiliares;
 
 import android.content.Intent;
-import android.content.res.Resources;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.TabHost;
-import android.widget.Toast;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
-import com.google.android.gms.common.api.GoogleApiClient;
+import java.util.ArrayList;
 
 public class categorias extends AppCompatActivity {
 
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
+    ListView li;
+    ArrayList lista = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,29 +35,20 @@ public class categorias extends AppCompatActivity {
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Resources res = getResources();
+        DBfamilybudget DBH = new DBfamilybudget(this);
+        SQLiteDatabase db = DBH.getWritableDatabase();
 
-        TabHost tabs = (TabHost) findViewById(android.R.id.tabhost);
-        tabs.setup();
+        li = (ListView) findViewById(R.id.lstCat);
 
-        TabHost.TabSpec spec = tabs.newTabSpec("Ingresos");
-        spec.setContent(R.id.tab1);
-        spec.setIndicator("Ingresos");
-        tabs.addTab(spec);
-
-        spec = tabs.newTabSpec("Gastos");
-        spec.setContent(R.id.tab2);
-        spec.setIndicator("Gastos");
-        tabs.addTab(spec);
-
-        tabs.setCurrentTab(0);
-
-        tabs.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
-            @Override
-            public void onTabChanged(String tabId) {
-                Toast.makeText(categorias.this, tabId, Toast.LENGTH_SHORT).show();
+        if (db != null) {
+            Cursor c = db.rawQuery(tbl_categorias.SELECT_ALL, null);
+            if (c.moveToFirst()) {
+                do {
+                    lista.add(c.getString(1));
+                } while (c.moveToNext());
             }
-        });
-
+        }
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, lista);
+        li.setAdapter(adapter);
     }
 }
