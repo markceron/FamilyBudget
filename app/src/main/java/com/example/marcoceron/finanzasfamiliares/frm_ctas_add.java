@@ -63,8 +63,6 @@ public class frm_ctas_add extends AppCompatActivity {
                         }
                     }
                 }
-
-
                 break;
             case R.id.action_exit:
 

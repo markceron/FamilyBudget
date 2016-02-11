@@ -33,6 +33,5 @@
             android:shadowColor="#eda6a6"
             android:singleLine="true" />
 
-
     </LinearLayout>
 </RelativeLayout>

@@ -22,7 +22,6 @@ public class frm_cat_add extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {

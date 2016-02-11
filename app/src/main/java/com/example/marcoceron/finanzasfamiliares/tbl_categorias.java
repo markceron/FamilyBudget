@@ -34,8 +34,6 @@ public class tbl_categorias {
         this.titulo = titulo;
     }
 
-
-
     @Override
     public String toString() {
         return "tbl_categorias{" +

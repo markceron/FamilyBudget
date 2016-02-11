@@ -45,4 +45,5 @@
         android:text="USD$"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="20dp" />
+
 </RelativeLayout>

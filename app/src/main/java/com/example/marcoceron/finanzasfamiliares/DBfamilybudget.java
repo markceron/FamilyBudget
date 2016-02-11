@@ -18,7 +18,6 @@ public class DBfamilybudget extends SQLiteOpenHelper {
         db = this.getWritableDatabase();
     }
 
-
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(tbl_cuentas.CREATE_DB_TABLE);
